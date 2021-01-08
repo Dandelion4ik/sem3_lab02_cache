@@ -36,7 +36,7 @@ void experiment::reverse_exp() {
   const int iterations = 1000;
   auto start = std::chrono::system_clock::now();
   for (auto k = 0; k < iterations; ++k) {
-    for (size_t i = cache_size; i > 0; i -= arg) {
+    for (size_t i = cache_size-arg; i > 0; i -= arg) {
       ++arr[i];
     }
   }
