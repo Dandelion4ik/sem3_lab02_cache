@@ -158,3 +158,91 @@ investigation:                                       |  investigation:
 ### Рекомендации
 
 При создание неиспользуемых переменных для считывание данных из буфера можно использовать аттрибут `[[maybe_unused]]`
+
+## Отчет
+
+```yaml
+investigation: 
+  travel_variant: straight
+  experiments: 
+  - experiment: 
+      number: 1
+      input_data: 
+        buffer_size: 24576 byte
+      results: 
+        duration: 0.0040004
+  - experiment: 
+      number: 2
+      input_data: 
+        buffer_size: 49152 byte
+      results: 
+        duration: 0.0080009
+  - experiment: 
+      number: 3
+      input_data: 
+        buffer_size: 262144 byte
+      results: 
+        duration: 0.1210028
+  - experiment: 
+      number: 4
+      input_data: 
+        buffer_size: 393216 byte
+      results: 
+        duration: 0.244008
+investigation: 
+  travel_variant: reverse
+  experiments: 
+  - experiment: 
+      number: 1
+      input_data: 
+        buffer_size: 24576 byte
+      results: 
+        duration: 0.0050002
+  - experiment: 
+      number: 2
+      input_data: 
+        buffer_size: 49152 byte
+      results: 
+        duration: 0.009002
+  - experiment: 
+      number: 3
+      input_data: 
+        buffer_size: 262144 byte
+      results: 
+        duration: 0.1380045
+  - experiment: 
+      number: 4
+      input_data: 
+        buffer_size: 393216 byte
+      results: 
+        duration: 0.3089985
+investigation: 
+  travel_variant: random
+  experiments: 
+  - experiment: 
+      number: 1
+      input_data: 
+        buffer_size: 24576 byte
+      results: 
+        duration: 0.0120014
+  - experiment: 
+      number: 2
+      input_data: 
+        buffer_size: 49152 byte
+      results: 
+        duration: 0.0319998
+  - experiment: 
+      number: 3
+      input_data: 
+        buffer_size: 262144 byte
+      results: 
+        duration: 0.881024
+  - experiment: 
+      number: 4
+      input_data: 
+        buffer_size: 393216 byte
+      results: 
+        duration: 1.539304
+```
+
+![График](https://github.com/Dandelion4ik/sem3_lab02_cache/blob/wp/lab/Graph/img.png)
