@@ -161,6 +161,7 @@ investigation:                                       |  investigation:
 
 ## Отчет
 
+```yaml
 investigation: 
   travel_variant: straight
   experiments: 
@@ -242,6 +243,6 @@ investigation:
         buffer_size: 393216 byte
       results: 
         duration: 1.539304
+```
 
-
-https://github.com/Dandelion4ik/sem3_lab02_cache/blob/wp/lab/Graph/img.png
+![График](https://github.com/Dandelion4ik/sem3_lab02_cache/blob/wp/lab/Graph/img.png)
